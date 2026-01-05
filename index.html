@@ -1,22 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Aretheia Legal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aretheia Legal</title>
+
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: rgba(255,255,255,0.08);
+      --text: #eef2ff;
+      --muted: rgba(238,242,255,0.75);
+      --line: rgba(255,255,255,0.14);
+      --accent: #7c3aed;
+      --accent2:#22c55e;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(124,58,237,0.35), transparent 60%),
+        radial-gradient(900px 500px at 85% 30%, rgba(34,197,94,0.20), transparent 55%),
+        linear-gradient(180deg, #070b14, var(--bg));
+      color: var(--text);
+      min-height:100vh;
+    }
+
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding: 14px 6px 24px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo{
+      width:44px;
+      height:44px;
+      border-radius:12px;
+      background: linear-gradient(135deg, rgba(124,58,237,0.95), rgba(34,197,94,0.85));
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    .brand h1{
+      margin:0;
+      font-size: 18px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+    .brand p{
+      margin:2px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .nav a{
+      color: var(--muted);
+      text-decoration:none;
+      font-size: 14px;
+      margin-left: 14px;
+    }
+    .nav a:hover{color: var(--text)}
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap:18px;
+      margin-top: 10px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+    }
+
+    .title{
+      font-size: 44px;
+      line-height: 1.05;
+      margin: 0 0 12px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle{
+      margin:0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 18px;
+    }
+    .chip{
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top: 18px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      color: var(--text);
+      text-decoration:none;
+      font-weight: 600;
+      font-size: 14px;
+      cursor:pointer;
+      background: rgba(255,255,255,0.05);
+    }
+    .btn:hover{border-color: rgba(255,255,255,0.30)}
+    .btn.primary{
+    background: linear-gradient(135deg, rgba(124,58,237
+</style>
 </head>
+
 <body>
+  <div class="wrap">
 
-<h1>ARETHEIA LEGAL</h1>
+    <header>
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <h1>ARETHEIA LEGAL</h1>
+          <p>Legal Advisory</p>
+        </div>
+      </div>
+    </header>
 
-<p>Legal services..</p>
-<p>
-Consultation by appointment.<br>
-Email: aretheia.legal@gmail.com    
-</p>
+    <section class="hero">
+      <div class="card">
+        <h2 class="title">Legal Services</h2>
+        <p class="subtitle">
+          Consultation by appointment only.<br>
+          Email: aretheia.legal@gmail.com
+        </p>
 
+        <div class="chips">
+          <span class="chip">Legal Information</span>
+          <span class="chip">Private Consultation</span>
+          <span class="chip">Professional Ethics</span>
+        </div>
 
-<p>
- Disclaimer: This website provides general legal information only and does not constitute legal advice.
-</p>
+        <p style="margin-top:18px; font-size:13px; color:var(--muted);">
+          Disclaimer: This website provides general legal information only and does not constitute legal advice.
+        </p>
+      </div>
+    </section>
 
+  </div>
 </body>
 </html>
+                                               
